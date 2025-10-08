@@ -1,3 +1,9 @@
+const [items, setItems] = useState([]);
+  const [input, setInput] = useState("");
+
+  const handleAddItem = () => {
+    setItems([...items,input]); //items 1 ta array ei array te ... mane ager jinish er input add kori 
+  };
 const addOrUpdateTask = () => {
         if (taskInput.trim() !== '') {
             if (isEditing) {
